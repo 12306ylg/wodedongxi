@@ -1,10 +1,17 @@
-<!DOCTYPE html><html> <head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head><body onload="daoliover( )">
-看完说的道理才能下载😋
-
-<script>
-function daoliover( ){
- window.location = "https://www.example.com";
-}
-</scrpit>
-</body>
-</html>
+   <p id="page_div">看完说的道理才可以下载😋</p>
+ 
+<script language="javascript">
+    var num = 36; //倒计时的秒数
+    var URL = "pop'n grosms.zip";
+    window.setTimeout("doUpdate()", 1000);
+    function doUpdate(){
+        if(num != 0){
+            document.getElementById('page_div').innerHTML = '将在'+num+'秒后自动跳转到首页' ;
+            num --;
+            window.setTimeout("doUpdate()", 1000);
+        }else{
+            num = 4;
+            window.location = URL;
+        }
+    }
+</script>
